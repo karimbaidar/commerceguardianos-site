@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { appStoreUrl, emailPlaceholder } from '$lib/config';
+  import { appStoreUrl } from '$lib/config';
   import CtaButton from './CtaButton.svelte';
 </script>
 
@@ -8,8 +8,8 @@
     <p class="eyebrow">Setup help</p>
     <h2>Want setup help?</h2>
     <p>
-      Email Karim at {emailPlaceholder}. The current conversion path is to install
-      CommerceGuardian OS from the Shopify App Store and run the first 50 checks free.
+      Install CommerceGuardian OS from the Shopify App Store and run the first 50 checks free.
+      Setup and support details are available through the App Store listing.
     </p>
     <CtaButton href={appStoreUrl} label="Install on the Shopify App Store" variant="primary" />
   </div>
@@ -22,7 +22,7 @@
       What do you want checked?
       <textarea placeholder="Wrong-address orders, return-to-sender issues, fulfillment risk..." disabled></textarea>
     </label>
-    <p>Form intake placeholder. Use the email above until a live form endpoint is added.</p>
+    <p>Form intake is not active on this public site.</p>
   </form>
 </section>
 

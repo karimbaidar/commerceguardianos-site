@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { emailPlaceholder } from '$lib/config';
   import CtaButton from './CtaButton.svelte';
 </script>
 
@@ -12,7 +11,7 @@
         Shopify agencies, 3PLs, and consultants can use CommerceGuardian OS as a practical
         order-risk review layer for stores with failed-delivery, reshipment, and support pain.
       </p>
-      <p class="contact">Referral and partner contact: Karim at {emailPlaceholder}</p>
+      <p class="contact">Partner inquiries can start from the Shopify App Store listing.</p>
     </div>
     <div class="button-row">
       <CtaButton href="/partners/" label="Partner with CommerceGuardian OS" variant="primary" />

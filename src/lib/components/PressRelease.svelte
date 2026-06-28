@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { appStoreUrl, emailPlaceholder } from '$lib/config';
+  import { appStoreUrl } from '$lib/config';
 </script>
 
 <article class="press-release">
@@ -24,7 +24,7 @@
     App Store link:
     <a href={appStoreUrl} target="_blank" rel="noreferrer">{appStoreUrl}</a>
   </p>
-  <p>Media contact: Karim at {emailPlaceholder}</p>
+  <p>Media contact details are available through the Shopify App Store listing.</p>
   <p class="note">Press release pending Shopify review before wider distribution.</p>
 </article>
 

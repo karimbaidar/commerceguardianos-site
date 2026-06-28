@@ -2,7 +2,7 @@
   import CtaButton from '$lib/components/CtaButton.svelte';
   import PressRelease from '$lib/components/PressRelease.svelte';
   import ShopifyBadge from '$lib/components/ShopifyBadge.svelte';
-  import { appStoreUrl, emailPlaceholder } from '$lib/config';
+  import { appStoreUrl } from '$lib/config';
 </script>
 
 <section class="section dark page-hero">
@@ -27,7 +27,7 @@
         CommerceGuardian OS helps Shopify merchants detect risky addresses, failed-delivery risks,
         revenue leaks, fulfillment mistakes, and compliance-readiness gaps inside Shopify Admin.
       </p>
-      <p>Media contact: Karim at {emailPlaceholder}</p>
+      <p>Media contact details are available through the Shopify App Store listing.</p>
     </div>
     <div class="media-card">
       <h3>Media kit</h3>

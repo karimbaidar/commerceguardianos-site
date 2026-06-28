@@ -7,5 +7,3 @@ export const futureDomain = 'commerceguardianos.com';
 export const defaultTitle = 'CommerceGuardian OS | Protect Shopify Orders Before Fulfillment';
 export const defaultDescription =
   'CommerceGuardian OS helps Shopify merchants detect risky addresses, failed-delivery risks, revenue leaks, fulfillment mistakes, and compliance-readiness gaps before orders become losses.';
-
-export const emailPlaceholder = '[official email placeholder]';

@@ -1,6 +1,5 @@
 <script lang="ts">
   import CtaButton from '$lib/components/CtaButton.svelte';
-  import { emailPlaceholder } from '$lib/config';
 </script>
 
 <section class="section dark page-hero">
@@ -71,7 +70,7 @@
     <h2>Partner with CommerceGuardian OS</h2>
     <p class="lead">
       Offer a wrong-address and fulfillment-risk audit to your clients. For referrals, setup
-      support, or partner conversations, email Karim at {emailPlaceholder}.
+      support, or partner conversations, start from the Shopify App Store listing.
     </p>
     <div class="button-row">
       <CtaButton href="/free-shopify-address-audit/" label="Start with a free audit" variant="primary" />
