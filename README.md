@@ -2,13 +2,13 @@
 
 Public marketing website for CommerceGuardian OS, a Shopify app that helps merchants protect orders before fulfillment.
 
-Expected GitHub Pages URL:
+Primary website URL:
+
+`https://commerceguardianos.com/`
+
+GitHub Pages repository URL before custom-domain routing:
 
 `https://karimbaidar.github.io/commerceguardianos-site/`
-
-Future custom domain:
-
-`commerceguardianos.com`
 
 Shopify App Store listing:
 
@@ -19,7 +19,7 @@ Shopify App Store listing:
 - SvelteKit
 - TypeScript
 - `@sveltejs/adapter-static`
-- GitHub Pages project path: `/commerceguardianos-site`
+- GitHub Pages custom domain: `commerceguardianos.com`
 
 ## Local Development
 
@@ -52,14 +52,48 @@ The workflow:
 
 ## GitHub Pages Setup
 
+GitHub Pages should be configured for GitHub Actions deployment with this custom domain:
+
+`commerceguardianos.com`
+
 If GitHub Pages is not already configured:
 
 1. Open the GitHub repo.
 2. Go to Settings.
 3. Open Pages.
 4. Set Source to GitHub Actions.
-5. Save.
-6. Wait for the deploy workflow to finish.
+5. Set Custom domain to `commerceguardianos.com`.
+6. Save.
+7. Wait for the deploy workflow to finish.
+8. Enable Enforce HTTPS when GitHub makes it available.
+
+## Cloudflare DNS Records
+
+Keep existing email records in place. Add only the web records below.
+
+For `commerceguardianos.com`:
+
+| Type | Name | Content | Proxy status |
+| --- | --- | --- | --- |
+| A | `@` | `185.199.108.153` | DNS only |
+| A | `@` | `185.199.109.153` | DNS only |
+| A | `@` | `185.199.110.153` | DNS only |
+| A | `@` | `185.199.111.153` | DNS only |
+
+For `www.commerceguardianos.com`:
+
+| Type | Name | Content | Proxy status |
+| --- | --- | --- | --- |
+| CNAME | `www` | `karimbaidar.github.io` | DNS only |
+
+Optional IPv6 records for `commerceguardianos.com`:
+
+| Type | Name | Content | Proxy status |
+| --- | --- | --- | --- |
+| AAAA | `@` | `2606:50c0:8000::153` | DNS only |
+| AAAA | `@` | `2606:50c0:8001::153` | DNS only |
+| AAAA | `@` | `2606:50c0:8002::153` | DNS only |
+| AAAA | `@` | `2606:50c0:8003::153` | DNS only |
 
 ## Shopify App Store Badge
 

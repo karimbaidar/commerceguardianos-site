@@ -1,7 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
 
-const production = process.env.NODE_ENV === 'production';
-
 const config = {
   kit: {
     adapter: adapter({
@@ -12,7 +10,7 @@ const config = {
       strict: true
     }),
     paths: {
-      base: production ? '/commerceguardianos-site' : ''
+      base: ''
     },
     prerender: {
       entries: ['*']

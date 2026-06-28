@@ -48,13 +48,13 @@
       <h2>Shopify</h2>
       <ul>
         <li><a href={appStoreUrl} target="_blank" rel="noreferrer">App Store listing</a></li>
-        <li><span>Future domain: {futureDomain}</span></li>
+        <li><span>Domain: {futureDomain}</span></li>
       </ul>
     </div>
   </div>
   <div class="container footer-bottom">
     <p>© 2026 CommerceGuardian OS. Shopify is a trademark of Shopify Inc.</p>
-    <p>Compliance-readiness support is not a guarantee of legal compliance.</p>
+    <p>Compliance-readiness support does not replace legal review.</p>
   </div>
 </footer>
 
